@@ -206,17 +206,24 @@
         }
         
         .spaceCategory ul li {
-            height: 253px;
-            width: 384px;
+            width: 30%;
         }
         
-        .spaceCategory ul li div a,
+        .spaceCategory ul li>div {
+            width: 100%;
+        }
+        
+        .spaceCategory ul li>div img {
+            width: 100%;
+        }
+        
+        .spaceCategory ul li>div div,
         .popularCategory ul li div a {
             position: relative;
             cursor: pointer;
         }
         
-        .spaceCategory ul li div a label,
+        .spaceCategory ul li>div div label,
         .popularCategory ul li div a label {
             position: absolute;
             border-radius: 5px;
@@ -230,7 +237,7 @@
             transition: .2s ease;
         }
         
-        .spaceCategory ul li div a:hover label,
+        .spaceCategory ul li>div div:hover label,
         .popularCategory ul li div a:hover label {
             background-color: #F4811F;
             color: #fff;
